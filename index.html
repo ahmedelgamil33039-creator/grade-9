@@ -16,38 +16,38 @@
             font-family: 'Tajawal', sans-serif;
             user-select: none;
             -webkit-user-select: none;
-            background: linear-gradient(135deg, #3b0764 0%, #581c87 50%, #1e1b4b 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #2e1065 50%, #1e1b4b 100%);
             min-height: 100vh;
             color: #f8fafc;
             overflow-x: hidden;
         }
         .glass-card {
-            background: rgba(49, 15, 87, 0.85);
+            background: rgba(30, 27, 75, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(234, 179, 8, 0.3);
+            border: 1px solid rgba(192, 132, 252, 0.2);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
         .glass-modal {
-            background: rgba(30, 10, 55, 0.98);
+            background: rgba(15, 10, 30, 0.98);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(234, 179, 8, 0.45);
+            border: 1px solid rgba(192, 132, 252, 0.35);
         }
         .btn-3d {
             transition: all 0.15s ease-out;
             transform: translateY(0);
-            box-shadow: 0 4px 15px rgba(234, 179, 8, 0.35);
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.35);
         }
         .btn-3d:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(234, 179, 8, 0.55);
+            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.55);
         }
         .btn-3d:active {
             transform: translateY(1px);
         }
         .text-glow {
-            text-shadow: 0 0 20px rgba(234, 179, 8, 0.6);
+            text-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
         }
         .wrap-safe {
             overflow-wrap: break-word;
@@ -70,47 +70,47 @@
 
         <!-- SCREEN 1: HOME & LOGIN -->
         <section id="screen-home" class="w-full space-y-6">
-            <div class="glass-card rounded-3xl p-4 sm:p-8 text-center relative overflow-hidden border border-yellow-500/30">
+            <div class="glass-card rounded-3xl p-4 sm:p-8 text-center relative overflow-hidden border border-purple-500/30">
                 <div class="flex justify-between items-center mb-4">
-                    <span id="display-badge-status" class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                    <span id="display-badge-status" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                         <i class="fa-solid fa-circle text-[8px] mr-1 animate-pulse"></i> متاح للطلاب
                     </span>
-                    <button onclick="openAdminModal()" class="text-amber-300 hover:text-white text-xs font-semibold px-3 py-1.5 rounded-xl border border-amber-500/40 bg-amber-950/60 transition">
-                        <i class="fa-solid fa-user-shield ml-1 text-amber-400"></i> الإدارة
+                    <button onclick="openAdminModal()" class="text-purple-300 hover:text-white text-xs font-semibold px-3 py-1.5 rounded-xl border border-purple-500/40 bg-purple-950/60 transition">
+                        <i class="fa-solid fa-user-shield ml-1 text-purple-400"></i> الإدارة
                     </button>
                 </div>
 
                 <!-- Banner Image -->
-                <div class="w-full rounded-2xl overflow-hidden mb-6 border border-yellow-500/30 shadow-2xl bg-slate-950 flex justify-center items-center">
+                <div class="w-full rounded-2xl overflow-hidden mb-6 border border-purple-500/30 shadow-2xl bg-slate-950 flex justify-center items-center">
                     <img id="display-quiz-banner" 
                          src="https://i.postimg.cc/Y2FdWsdv/ghlaf.jpg" 
                          alt="غلاف الاختبار" 
                          class="w-full h-auto aspect-video object-contain">
                 </div>
 
-                <h1 id="display-quiz-title" class="text-2xl sm:text-3xl font-black text-amber-200 text-glow leading-snug mb-2 wrap-safe">
+                <h1 id="display-quiz-title" class="text-2xl sm:text-3xl font-black text-purple-200 text-glow leading-snug mb-2 wrap-safe">
                     اختبار الصف الثالث الإعدادي في الدراسات الاجتماعية
                 </h1>
-                <div class="flex items-center justify-center gap-4 text-xs sm:text-sm text-amber-200/80 font-medium mb-6">
-                    <span><i class="fa-solid fa-chalkboard-user text-amber-400 ml-1"></i> <span id="display-teacher-name">مس رشا دياب</span></span>
+                <div class="flex items-center justify-center gap-4 text-xs sm:text-sm text-purple-200/80 font-medium mb-6">
+                    <span><i class="fa-solid fa-chalkboard-user text-purple-400 ml-1"></i> <span id="display-teacher-name">مس رشا دياب</span></span>
                     <span>|</span>
                     <span><i class="fa-solid fa-phone text-emerald-400 ml-1"></i> <span id="display-teacher-phone">01205333472</span></span>
                 </div>
 
                 <div class="max-w-md mx-auto space-y-4 text-right">
                     <div>
-                        <label class="block text-xs font-bold text-amber-200 mb-1">اختر اسم الطالب:</label>
+                        <label class="block text-xs font-bold text-purple-200 mb-1">اختر اسم الطالب:</label>
                         <div class="relative">
-                            <select id="select-student" class="w-full bg-slate-900/90 text-white font-bold p-3.5 rounded-2xl border border-yellow-500/40 focus:outline-none focus:border-yellow-400 transition text-sm appearance-none cursor-pointer">
+                            <select id="select-student" class="w-full bg-slate-900/90 text-white font-bold p-3.5 rounded-2xl border border-purple-500/40 focus:outline-none focus:border-purple-400 transition text-sm appearance-none cursor-pointer">
                                 <option value="">-- اختر اسمك من القائمة --</option>
                             </select>
-                            <i class="fa-solid fa-chevron-down absolute left-4 top-1/2 -translate-y-1/2 text-yellow-400 pointer-events-none text-xs"></i>
+                            <i class="fa-solid fa-chevron-down absolute left-4 top-1/2 -translate-y-1/2 text-purple-400 pointer-events-none text-xs"></i>
                         </div>
                     </div>
 
-                    <button onclick="handleStartClick()" class="w-full btn-3d bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-white font-black py-4 rounded-2xl text-lg flex items-center justify-center gap-2 border border-yellow-400/30">
+                    <button onclick="handleStartClick()" class="w-full btn-3d bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-black py-4 rounded-2xl text-lg flex items-center justify-center gap-2 border border-purple-400/30">
                         <i class="fa-solid fa-bolt-lightning text-yellow-300"></i>
-                        <span>بدء اختبار الشهادة الإعدادية</span>
+                        <span>بدء اختبار الصف الثالث الإعدادي</span>
                     </button>
                 </div>
             </div>
@@ -118,14 +118,14 @@
 
         <!-- SCREEN 2: ACTIVE QUIZ -->
         <section id="screen-quiz" class="w-full space-y-4 hidden">
-            <div class="glass-card rounded-2xl p-4 flex justify-between items-center border border-yellow-500/30">
+            <div class="glass-card rounded-2xl p-4 flex justify-between items-center border border-purple-500/30">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-600 to-yellow-600 flex items-center justify-center text-white font-bold shadow-md flex-shrink-0">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold shadow-md flex-shrink-0">
                         <i class="fa-solid fa-book-open"></i>
                     </div>
                     <div class="overflow-hidden">
-                        <div class="text-xs text-amber-300 truncate" id="quiz-header-teacher">مس رشا دياب</div>
-                        <div class="text-sm font-bold text-amber-100 truncate" id="quiz-header-student">طالب</div>
+                        <div class="text-xs text-purple-300 truncate" id="quiz-header-teacher">مس رشا دياب</div>
+                        <div class="text-sm font-bold text-purple-100 truncate" id="quiz-header-student">طالب</div>
                     </div>
                 </div>
 
@@ -134,16 +134,16 @@
                         <i class="fa-solid fa-clock animate-pulse text-red-400"></i>
                         <span id="quiz-timer">29:59</span>
                     </div>
-                    <div class="bg-purple-950/80 text-amber-200 border border-yellow-500/40 px-3 py-1.5 rounded-xl font-bold text-xs">
-                        <span id="quiz-question-counter">السؤال 1 من 4</span>
+                    <div class="bg-purple-950/80 text-purple-200 border border-purple-500/40 px-3 py-1.5 rounded-xl font-bold text-xs">
+                        <span id="quiz-question-counter">السؤال 1 من 40</span>
                     </div>
                 </div>
             </div>
 
-            <div class="glass-card rounded-3xl p-5 sm:p-8 space-y-6 border border-yellow-500/40">
+            <div class="glass-card rounded-3xl p-5 sm:p-8 space-y-6 border border-purple-500/40">
                 <div class="flex items-center justify-between">
-                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-yellow-500/30" id="quiz-q-type">سؤال</span>
-                    <span class="text-xs font-semibold text-amber-300">الدرجة: <span id="quiz-q-points" class="text-amber-200 font-bold">1</span></span>
+                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30" id="quiz-q-type">سؤال</span>
+                    <span class="text-xs font-semibold text-purple-300">الدرجة: <span id="quiz-q-points" class="text-purple-200 font-bold">1</span></span>
                 </div>
 
                 <div class="w-full py-2 text-center">
@@ -152,14 +152,14 @@
                     </h2>
                 </div>
 
-                <div id="quiz-q-image-wrap" class="hidden w-full max-h-56 rounded-xl overflow-hidden bg-slate-900 border border-yellow-500/30 flex justify-center items-center">
+                <div id="quiz-q-image-wrap" class="hidden w-full max-h-56 rounded-xl overflow-hidden bg-slate-900 border border-purple-500/30 flex justify-center items-center">
                     <img id="quiz-q-image" src="" alt="صورة السؤال" class="max-h-56 object-contain">
                 </div>
 
                 <div id="quiz-options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2"></div>
 
-                <div class="pt-4 border-t border-yellow-500/30 flex justify-end">
-                    <button onclick="confirmExitQuiz()" class="text-amber-300 hover:text-red-400 text-xs font-bold px-4 py-2 rounded-xl transition">
+                <div class="pt-4 border-t border-purple-500/30 flex justify-end">
+                    <button onclick="confirmExitQuiz()" class="text-purple-300 hover:text-red-400 text-xs font-bold px-4 py-2 rounded-xl transition">
                         <i class="fa-solid fa-flag-checkered ml-1"></i> إنهاء الاختبار
                     </button>
                 </div>
@@ -168,19 +168,19 @@
 
         <!-- SCREEN 3: RESULTS SCREEN -->
         <section id="screen-result" class="w-full space-y-6 hidden">
-            <div class="glass-card rounded-3xl p-6 sm:p-8 text-center border border-yellow-500/40 space-y-6">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 text-center border border-purple-500/40 space-y-6">
                 <div id="result-status-icon" class="w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-3xl shadow-xl">
                     <i class="fa-solid fa-trophy"></i>
                 </div>
 
                 <div>
                     <h2 id="result-headline" class="text-2xl sm:text-3xl font-black text-white mb-2 wrap-safe">ممتاز يا بطل!</h2>
-                    <p id="result-message" class="text-sm text-amber-200 max-w-md mx-auto leading-relaxed wrap-safe">رسالة التحفيز...</p>
+                    <p id="result-message" class="text-sm text-purple-200 max-w-md mx-auto leading-relaxed wrap-safe">رسالة التحفيز...</p>
                 </div>
 
-                <div class="bg-purple-950/80 rounded-2xl p-6 border border-yellow-500/40 inline-block px-12 shadow-inner">
-                    <div class="text-xs font-bold text-amber-300 mb-1">الدرجة النهائية</div>
-                    <div class="text-4xl sm:text-5xl font-black text-amber-300 font-mono tracking-tight" id="result-score">0 / 0</div>
+                <div class="bg-purple-950/80 rounded-2xl p-6 border border-purple-500/40 inline-block px-12 shadow-inner">
+                    <div class="text-xs font-bold text-purple-300 mb-1">الدرجة النهائية</div>
+                    <div class="text-4xl sm:text-5xl font-black text-purple-300 font-mono tracking-tight" id="result-score">0 / 0</div>
                     <div class="text-sm font-bold text-emerald-400 mt-2" id="result-percent">النسبة المئوية: 0%</div>
                 </div>
 
@@ -197,18 +197,18 @@
                         <span class="text-xs text-amber-400 block font-bold">غير مجاب</span>
                         <span class="text-xl font-bold text-white font-mono" id="result-stat-unanswered">0</span>
                     </div>
-                    <div class="bg-yellow-500/10 border border-yellow-500/20 p-3 rounded-2xl">
-                        <span class="text-xs text-amber-300 block font-bold">إجمالي الأسئلة</span>
+                    <div class="bg-purple-500/10 border border-purple-500/20 p-3 rounded-2xl">
+                        <span class="text-xs text-purple-300 block font-bold">إجمالي الأسئلة</span>
                         <span class="text-xl font-bold text-white font-mono" id="result-stat-total">0</span>
                     </div>
                 </div>
 
                 <div class="text-right space-y-3 pt-4">
-                    <h3 class="text-base font-bold text-amber-300"><i class="fa-solid fa-list-check ml-2"></i> تفاصيل الإجابات:</h3>
+                    <h3 class="text-base font-bold text-purple-300"><i class="fa-solid fa-list-check ml-2"></i> تفاصيل الإجابات:</h3>
                     <div id="result-breakdown" class="space-y-3 max-h-80 overflow-y-auto pr-1"></div>
                 </div>
 
-                <button onclick="navigateTo('screen-home')" class="w-full btn-3d bg-amber-900/60 hover:bg-amber-800 text-white font-bold py-3.5 rounded-2xl transition border border-yellow-500/40">
+                <button onclick="navigateTo('screen-home')" class="w-full btn-3d bg-purple-900/60 hover:bg-purple-800 text-white font-bold py-3.5 rounded-2xl transition border border-purple-500/40">
                     العودة للشاشة الرئيسية
                 </button>
             </div>
@@ -216,21 +216,21 @@
 
         <!-- SCREEN 4: COMPLETE ADMIN DASHBOARD -->
         <section id="screen-admin" class="w-full space-y-6 hidden">
-            <div class="glass-card rounded-3xl p-6 border border-yellow-500/40 space-y-6">
+            <div class="glass-card rounded-3xl p-6 border border-purple-500/40 space-y-6">
                 
                 <!-- HEADER -->
-                <div class="flex flex-wrap justify-between items-center gap-4 pb-4 border-b border-yellow-500/30">
+                <div class="flex flex-wrap justify-between items-center gap-4 pb-4 border-b border-purple-500/30">
                     <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 bg-amber-500/20 border border-yellow-500/30 text-amber-300 rounded-2xl flex items-center justify-center text-xl flex-shrink-0">
+                        <div class="w-12 h-12 bg-purple-500/20 border border-purple-500/30 text-purple-300 rounded-2xl flex items-center justify-center text-xl flex-shrink-0">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                         <div>
                             <h2 class="text-xl font-black text-white">لوحة تحكم الصف الثالث الإعدادي</h2>
-                            <p class="text-xs text-amber-300">متصلة سحابياً ومحلياً بجداول بيانات Google</p>
+                            <p class="text-xs text-purple-300">متصلة سحابياً ومحلياً بجداول بيانات Google (الصف الثالث الإعدادي)</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button onclick="previewQuiz()" class="bg-yellow-600 hover:bg-yellow-500 text-white text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                        <button onclick="previewQuiz()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
                             <i class="fa-solid fa-eye"></i> معاينة
                         </button>
                         <button onclick="logoutAdmin()" class="bg-red-500/20 hover:bg-red-500/30 text-red-300 border border-red-500/30 text-xs font-bold px-4 py-2 rounded-xl transition">
@@ -240,8 +240,8 @@
                 </div>
 
                 <!-- ADMIN TABS -->
-                <div class="flex gap-2 overflow-x-auto pb-2 border-b border-yellow-500/30 text-xs font-bold">
-                    <button onclick="switchAdminTab('settings')" id="admin-tab-btn-settings" class="admin-tab-btn px-4 py-2.5 rounded-xl bg-amber-600 text-white whitespace-nowrap">
+                <div class="flex gap-2 overflow-x-auto pb-2 border-b border-purple-500/30 text-xs font-bold">
+                    <button onclick="switchAdminTab('settings')" id="admin-tab-btn-settings" class="admin-tab-btn px-4 py-2.5 rounded-xl bg-purple-600 text-white whitespace-nowrap">
                         <i class="fa-solid fa-sliders ml-1"></i> إدارة الاختبار
                     </button>
                     <button onclick="switchAdminTab('questions')" id="admin-tab-btn-questions" class="admin-tab-btn px-4 py-2.5 rounded-xl bg-slate-800 text-slate-300 whitespace-nowrap">
@@ -262,58 +262,58 @@
                 <div id="admin-tab-settings" class="admin-tab-content space-y-4 text-right">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">اسم الاختبار</label>
-                            <input type="text" id="admin-input-title" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">اسم الاختبار</label>
+                            <input type="text" id="admin-input-title" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">الصف الدراسي</label>
-                            <input type="text" id="admin-input-grade" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">الصف الدراسي</label>
+                            <input type="text" id="admin-input-grade" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">المادة</label>
-                            <input type="text" id="admin-input-subject" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">المادة</label>
+                            <input type="text" id="admin-input-subject" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">اسم المعلمة</label>
-                            <input type="text" id="admin-input-teacher" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">اسم المعلمة</label>
+                            <input type="text" id="admin-input-teacher" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">رقم الهاتف</label>
-                            <input type="text" id="admin-input-phone" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">رقم الهاتف</label>
+                            <input type="text" id="admin-input-phone" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">مدة الاختبار (بالدقائق)</label>
-                            <input type="number" id="admin-input-duration" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">مدة الاختبار (بالدقائق)</label>
+                            <input type="number" id="admin-input-duration" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                         
                         <!-- Banner Image Control with Live Preview -->
                         <div class="sm:col-span-2 space-y-2">
-                            <label class="block text-xs font-bold text-amber-200">رابط صورة واجهة الاختبار</label>
+                            <label class="block text-xs font-bold text-purple-200">رابط صورة واجهة الاختبار</label>
                             <div class="flex gap-2">
-                                <input type="text" id="admin-input-banner" oninput="previewBannerInput(this.value)" placeholder="https://..." class="flex-1 bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                                <input type="text" id="admin-input-banner" oninput="previewBannerInput(this.value)" placeholder="https://..." class="flex-1 bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                             </div>
-                            <div class="w-full rounded-xl bg-slate-900 border border-yellow-500/30 overflow-hidden flex items-center justify-center p-2">
+                            <div class="w-full rounded-xl bg-slate-900 border border-purple-500/30 overflow-hidden flex items-center justify-center p-2">
                                 <img id="admin-banner-preview" src="" alt="معاينة الصورة" class="max-h-48 w-full object-contain">
                                 <span id="admin-banner-fallback" class="text-xs text-slate-500">معاينة الصورة</span>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">حالة نشر الاختبار</label>
-                            <select id="admin-input-status" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">حالة نشر الاختبار</label>
+                            <select id="admin-input-status" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                                 <option value="published">منشور للطلاب</option>
                                 <option value="draft">مسودة (غير متاح)</option>
                                 <option value="closed">مغلق</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-amber-200 mb-1">الرقم السري الجديد للإدارة</label>
-                            <input type="password" id="admin-input-newpass" placeholder="اتركه فارغاً إن لم ترغب في التغيير" class="w-full bg-slate-900 border border-yellow-500/40 p-2.5 rounded-xl text-sm text-white">
+                            <label class="block text-xs font-bold text-purple-200 mb-1">الرقم السري الجديد للإدارة</label>
+                            <input type="password" id="admin-input-newpass" placeholder="اتركه فارغاً إن لم ترغب في التغيير" class="w-full bg-slate-900 border border-purple-500/40 p-2.5 rounded-xl text-sm text-white">
                         </div>
                     </div>
 
                     <div class="pt-4">
-                        <button onclick="saveAdminSettings()" class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition">
+                        <button onclick="saveAdminSettings()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition">
                             <i class="fa-solid fa-cloud-arrow-up ml-1"></i> حفظ وتحديث سحابي فوري
                         </button>
                     </div>
@@ -322,37 +322,33 @@
                 <!-- TAB 2: QUESTIONS -->
                 <div id="admin-tab-questions" class="admin-tab-content space-y-6 hidden text-right">
                     
-                    <div class="p-4 bg-purple-950/70 rounded-2xl border border-yellow-500/40 flex flex-wrap items-center justify-between gap-3">
+                    <div class="p-4 bg-purple-950/70 rounded-2xl border border-purple-500/40 flex flex-wrap items-center justify-between gap-3">
                         <div class="space-y-0.5">
                             <h4 class="font-bold text-sm text-white flex items-center gap-2">
-                                <i class="fa-solid fa-shuffle text-amber-400"></i> نظام الترتيب العشوائي للاختبار
+                                <i class="fa-solid fa-shuffle text-purple-400"></i> نظام الترتيب العشوائي للاختبار
                             </h4>
-                            <p class="text-[11px] text-amber-300">تغيير ترتيب الأسئلة والخيارات عشوائياً لكل طالب ولمنع الغش عند الإعادة.</p>
+                            <p class="text-[11px] text-purple-300">تغيير ترتيب الأسئلة والخيارات عشوائياً لكل طالب ولمنع الغش عند الإعادة.</p>
                         </div>
                         <div class="flex items-center gap-3">
-                            <button onclick="toggleRandomMode()" id="btn-toggle-random" class="px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-yellow-600 text-white shadow-md">
+                            <button onclick="toggleRandomMode()" id="btn-toggle-random" class="px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-emerald-600 text-white shadow-md">
                                 <i id="icon-toggle-random" class="fa-solid fa-check"></i>
                                 <span id="text-toggle-random">مفعل (ترتيب عشوائي)</span>
                             </button>
                         </div>
                     </div>
 
-                    <div class="bg-slate-900/80 p-4 rounded-2xl border border-yellow-500/30 space-y-3">
-                        <h4 class="font-bold text-sm text-amber-300" id="q-form-title">إضافة سؤال جديد</h4>
+                    <div class="bg-slate-900/80 p-4 rounded-2xl border border-purple-500/30 space-y-3">
+                        <h4 class="font-bold text-sm text-purple-300" id="q-form-title">إضافة سؤال جديد</h4>
                         <input type="hidden" id="admin-q-id">
                         <div>
-                            <label class="block text-xs text-amber-300 mb-1">نوع السؤال</label>
+                            <label class="block text-xs text-purple-300 mb-1">نوع السؤال</label>
                             <select id="admin-q-type" onchange="handleQTypeChange()" class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white">
                                 <option value="mcq">اختيار من متعدد</option>
                                 <option value="true_false">صح أو خطأ</option>
-                                <option value="complete">أكمل العبارة</option>
-                                <option value="error_correction">تصويب الخطأ</option>
-                                <option value="what_results">ما النتائج المترتبة على (باختيارات 4)</option>
-                                <option value="why_explain">بما تفسر (باختيارات 4)</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs text-amber-300 mb-1">نص السؤال</label>
+                            <label class="block text-xs text-purple-300 mb-1">نص السؤال</label>
                             <textarea id="admin-q-text" rows="3" class="w-full bg-slate-800 border border-slate-700 p-2.5 rounded-xl text-sm text-white wrap-safe"></textarea>
                         </div>
                         <div id="admin-q-options-wrap" class="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -363,7 +359,7 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-xs text-amber-300 mb-1">الإجابة الصحيحة</label>
+                                <label class="block text-xs text-purple-300 mb-1">الإجابة الصحيحة</label>
                                 <select id="admin-q-correct" class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white">
                                     <option value="0">الخيار 1</option>
                                     <option value="1">الخيار 2</option>
@@ -372,42 +368,42 @@
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-xs text-amber-300 mb-1">درجة السؤال</label>
+                                <label class="block text-xs text-purple-300 mb-1">درجة السؤال</label>
                                 <input type="number" id="admin-q-points" value="1" min="1" class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white">
                             </div>
                             <div>
-                                <label class="block text-xs text-amber-300 mb-1">رابط صورة (اختياري)</label>
+                                <label class="block text-xs text-purple-300 mb-1">رابط صورة (اختياري)</label>
                                 <input type="text" id="admin-q-image" placeholder="https://..." class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white">
                             </div>
                         </div>
                         <div class="flex gap-2 pt-2">
-                            <button onclick="saveQuestion()" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition">حفظ السؤال</button>
+                            <button onclick="saveQuestion()" class="bg-purple-600 hover:bg-purple-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition">حفظ السؤال</button>
                             <button onclick="resetQuestionForm()" class="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-xl text-xs transition">إلغاء</button>
                         </div>
                     </div>
 
                     <div class="space-y-2">
-                        <h4 class="font-bold text-sm text-amber-200">الأسئلة الحالية (<span id="admin-q-count">0</span>)</h4>
+                        <h4 class="font-bold text-sm text-purple-200">الأسئلة الحالية (<span id="admin-q-count">0</span>)</h4>
                         <div id="admin-questions-list" class="space-y-2 max-h-80 overflow-y-auto pr-1"></div>
                     </div>
                 </div>
 
                 <!-- TAB 3: STUDENTS -->
                 <div id="admin-tab-students" class="admin-tab-content space-y-4 hidden text-right">
-                    <div class="bg-slate-900/80 p-4 rounded-2xl border border-yellow-500/30 flex flex-wrap gap-2 items-end">
+                    <div class="bg-slate-900/80 p-4 rounded-2xl border border-purple-500/30 flex flex-wrap gap-2 items-end">
                         <div class="flex-1 min-w-[150px]">
-                            <label class="block text-xs text-amber-300 mb-1">اسم الطالب</label>
+                            <label class="block text-xs text-purple-300 mb-1">اسم الطالب</label>
                             <input type="text" id="admin-new-student-name" class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white">
                         </div>
                         <div class="w-32">
-                            <label class="block text-xs text-amber-300 mb-1">الرقم السري</label>
+                            <label class="block text-xs text-purple-300 mb-1">الرقم السري</label>
                             <input type="text" id="admin-new-student-pass" placeholder="1234" class="w-full bg-slate-800 border border-slate-700 p-2 rounded-xl text-xs text-white text-center font-mono">
                         </div>
-                        <button onclick="addStudent()" class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition">إضافة طالب</button>
+                        <button onclick="addStudent()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition">إضافة طالب</button>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full text-xs text-right text-slate-300">
-                            <thead class="bg-slate-900 border-b border-yellow-500/30 text-amber-300">
+                            <thead class="bg-slate-900 border-b border-purple-500/30 text-purple-300">
                                 <tr>
                                     <th class="p-2.5">المعرف</th>
                                     <th class="p-2.5">الاسم</th>
@@ -426,7 +422,7 @@
                     <h4 class="font-bold text-sm text-red-400"><i class="fa-solid fa-ban ml-1"></i> قائمة الطلاب المحظورين ومن أتموا الاختبار</h4>
                     <div class="overflow-x-auto">
                         <table class="w-full text-xs text-right text-slate-300">
-                            <thead class="bg-slate-900 border-b border-yellow-500/30 text-amber-300">
+                            <thead class="bg-slate-900 border-b border-purple-500/30 text-purple-300">
                                 <tr>
                                     <th class="p-2.5">الاسم</th>
                                     <th class="p-2.5">سبب الحظر / الحالة</th>
@@ -442,19 +438,19 @@
                 <!-- TAB 5: RESULTS -->
                 <div id="admin-tab-results" class="admin-tab-content space-y-4 hidden text-right">
                     <div class="flex flex-wrap justify-between items-center gap-2">
-                        <h4 class="font-bold text-sm text-amber-300">سجل نتائج طلاب الصف الثالث الإعدادي</h4>
+                        <h4 class="font-bold text-sm text-purple-300">سجل نتائج طلاب الصف الثالث الإعدادي</h4>
                         <div class="flex gap-2">
                             <button onclick="clearAllResults()" class="bg-red-600/30 hover:bg-red-600 text-red-200 border border-red-500/40 font-bold px-3 py-1.5 rounded-xl text-xs transition">
                                 <i class="fa-solid fa-trash-can ml-1"></i> حذف جميع النتائج
                             </button>
-                            <button onclick="exportResultsCSV()" class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold px-3 py-1.5 rounded-xl text-xs transition">
+                            <button onclick="exportResultsCSV()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-xl text-xs transition">
                                 <i class="fa-solid fa-file-excel ml-1"></i> تصدير Excel (CSV)
                             </button>
                         </div>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full text-xs text-right text-slate-300">
-                            <thead class="bg-slate-900 border-b border-yellow-500/30 text-amber-300">
+                            <thead class="bg-slate-900 border-b border-purple-500/30 text-purple-300">
                                 <tr>
                                     <th class="p-2.5">الطالب</th>
                                     <th class="p-2.5">الدرجة</th>
@@ -475,56 +471,56 @@
 
     <!-- MODAL 1: PASSCODE -->
     <div id="modal-passcode" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden">
-        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-yellow-500/30 shadow-2xl">
-            <div class="w-12 h-12 bg-amber-500/20 text-amber-300 rounded-2xl mx-auto flex items-center justify-center text-xl">
+        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-purple-500/30 shadow-2xl">
+            <div class="w-12 h-12 bg-purple-500/20 text-purple-300 rounded-2xl mx-auto flex items-center justify-center text-xl">
                 <i class="fa-solid fa-key"></i>
             </div>
             <h3 class="font-bold text-lg text-white">التحقق من هوية الطالب</h3>
-            <p class="text-xs text-amber-300 wrap-safe" id="passcode-student-label">أدخل الرقم السري</p>
-            <input type="password" id="student-passcode-input" placeholder="••••" class="w-full bg-slate-900 border border-yellow-500/40 p-3 rounded-2xl text-center text-xl font-mono text-white tracking-widest focus:outline-none focus:border-yellow-400">
+            <p class="text-xs text-purple-300 wrap-safe" id="passcode-student-label">أدخل الرقم السري</p>
+            <input type="password" id="student-passcode-input" placeholder="••••" class="w-full bg-slate-900 border border-purple-500/40 p-3 rounded-2xl text-center text-xl font-mono text-white tracking-widest focus:outline-none focus:border-purple-400">
             <div class="flex gap-2">
                 <button onclick="closePasscodeModal()" class="w-1/2 bg-slate-800 text-slate-300 py-2.5 rounded-xl text-xs font-bold">إلغاء</button>
-                <button onclick="verifyStudentPasscode()" class="w-1/2 bg-amber-600 hover:bg-amber-500 text-white py-2.5 rounded-xl text-xs font-bold">تحقق ومتابعة</button>
+                <button onclick="verifyStudentPasscode()" class="w-1/2 bg-purple-600 hover:bg-purple-500 text-white py-2.5 rounded-xl text-xs font-bold">تحقق ومتابعة</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL 2: READY PROMPT -->
     <div id="modal-ready" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden">
-        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-yellow-500/30 shadow-2xl">
+        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-purple-500/30 shadow-2xl">
             <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-2xl mx-auto flex items-center justify-center text-xl">
                 <i class="fa-solid fa-circle-question"></i>
             </div>
             <h3 class="font-bold text-lg text-white">هل أنت مستعد لبدء الاختبار؟</h3>
-            <div class="bg-slate-900/80 p-3 rounded-xl border border-yellow-500/30 text-xs text-amber-200 space-y-1.5 text-right">
-                <div class="flex justify-between"><span>عدد الأسئلة:</span> <span id="ready-q-count" class="font-bold text-amber-300">4 أسئلة</span></div>
-                <div class="flex justify-between"><span>مدة الاختبار:</span> <span id="ready-duration" class="font-bold text-amber-300">30 دقيقة</span></div>
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-purple-500/30 text-xs text-purple-200 space-y-1.5 text-right">
+                <div class="flex justify-between"><span>عدد الأسئلة:</span> <span id="ready-q-count" class="font-bold text-purple-300">40 سؤالاً</span></div>
+                <div class="flex justify-between"><span>مدة الاختبار:</span> <span id="ready-duration" class="font-bold text-purple-300">30 دقيقة</span></div>
                 <div class="text-[11px] text-amber-300 pt-1">تنبيه: لا يمكن الرجوع للسؤال السابق بعد الإجابة.</div>
             </div>
             <div class="flex gap-2">
                 <button onclick="closeReadyModal()" class="w-1/2 bg-slate-800 text-slate-300 py-2.5 rounded-xl text-xs font-bold">إلغاء</button>
-                <button onclick="startActualQuiz()" class="w-1/2 bg-gradient-to-r from-amber-500 to-yellow-600 text-white py-2.5 rounded-xl text-xs font-bold shadow-lg">بدء الاختبار الآن</button>
+                <button onclick="startActualQuiz()" class="w-1/2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-2.5 rounded-xl text-xs font-bold shadow-lg">بدء الاختبار الآن</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL 3: ELEGANT PREVIOUS ATTEMPT & BAN CARD -->
     <div id="modal-student-blocked" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden">
-        <div class="glass-modal rounded-3xl p-6 max-w-md w-full text-center space-y-5 border border-yellow-500/40 shadow-2xl">
-            <div class="w-14 h-14 bg-amber-500/20 text-amber-400 rounded-3xl mx-auto flex items-center justify-center text-2xl border border-yellow-500/30">
+        <div class="glass-modal rounded-3xl p-6 max-w-md w-full text-center space-y-5 border border-purple-500/40 shadow-2xl">
+            <div class="w-14 h-14 bg-amber-500/20 text-amber-400 rounded-3xl mx-auto flex items-center justify-center text-2xl border border-amber-500/30">
                 <i class="fa-solid fa-shield-halved"></i>
             </div>
             <div>
                 <h3 class="font-black text-xl text-white mb-1" id="blocked-modal-title">تنبيه أداء الاختبار</h3>
-                <p class="text-xs text-amber-200 leading-relaxed" id="blocked-modal-msg">لقد قمت بأداء هذا الاختبار مسبقاً.</p>
+                <p class="text-xs text-purple-200 leading-relaxed" id="blocked-modal-msg">لقد قمت بأداء هذا الاختبار مسبقاً.</p>
             </div>
 
             <!-- Score box -->
-            <div id="blocked-modal-scorebox" class="bg-purple-950/80 p-4 rounded-2xl border border-yellow-500/30 space-y-2 text-right">
-                <div class="flex justify-between text-xs"><span class="text-amber-300">اسم الطالب:</span> <span class="font-bold text-white" id="blocked-student-name">-</span></div>
-                <div class="flex justify-between text-xs"><span class="text-amber-300">الدرجة المحققة:</span> <span class="font-bold text-emerald-400 font-mono" id="blocked-student-score">-</span></div>
-                <div class="flex justify-between text-xs"><span class="text-amber-300">النسبة المئوية:</span> <span class="font-bold text-amber-300 font-mono" id="blocked-student-percent">-</span></div>
-                <div class="flex justify-between text-xs"><span class="text-amber-300">توقيت الاختبار:</span> <span class="text-slate-400 font-mono text-[11px]" id="blocked-student-time">-</span></div>
+            <div id="blocked-modal-scorebox" class="bg-purple-950/80 p-4 rounded-2xl border border-purple-500/30 space-y-2 text-right">
+                <div class="flex justify-between text-xs"><span class="text-purple-300">اسم الطالب:</span> <span class="font-bold text-white" id="blocked-student-name">-</span></div>
+                <div class="flex justify-between text-xs"><span class="text-purple-300">الدرجة المحققة:</span> <span class="font-bold text-emerald-400 font-mono" id="blocked-student-score">-</span></div>
+                <div class="flex justify-between text-xs"><span class="text-purple-300">النسبة المئوية:</span> <span class="font-bold text-purple-300 font-mono" id="blocked-student-percent">-</span></div>
+                <div class="flex justify-between text-xs"><span class="text-purple-300">توقيت الاختبار:</span> <span class="text-slate-400 font-mono text-[11px]" id="blocked-student-time">-</span></div>
             </div>
 
             <div class="text-[11px] text-amber-300 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20">
@@ -532,29 +528,30 @@
             </div>
 
             <div class="flex gap-2">
-                <button onclick="closeBlockedModal()" class="w-full bg-amber-700 hover:bg-amber-600 text-white py-3 rounded-xl text-xs font-bold transition">حسناً، فهمت</button>
+                <button onclick="closeBlockedModal()" class="w-full bg-purple-700 hover:bg-purple-600 text-white py-3 rounded-xl text-xs font-bold transition">حسناً، فهمت</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL 4: ADMIN LOGIN -->
     <div id="modal-admin-auth" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden">
-        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-yellow-500/30 shadow-2xl">
-            <div class="w-12 h-12 bg-amber-500/20 text-amber-300 rounded-2xl mx-auto flex items-center justify-center text-xl">
+        <div class="glass-modal rounded-3xl p-6 max-w-sm w-full text-center space-y-4 border border-purple-500/30 shadow-2xl">
+            <div class="w-12 h-12 bg-purple-500/20 text-purple-300 rounded-2xl mx-auto flex items-center justify-center text-xl">
                 <i class="fa-solid fa-lock"></i>
             </div>
             <h3 class="font-bold text-lg text-white">دخول لوحة إدارة الصف الثالث الإعدادي</h3>
-            <p class="text-xs text-amber-300">أدخل الرقم السري الإداري</p>
-            <input type="password" id="admin-passcode-input" autocomplete="new-password" placeholder="••••••••" class="w-full bg-slate-900 border border-yellow-500/40 p-3 rounded-2xl text-center text-base font-mono text-white tracking-wider focus:outline-none focus:border-yellow-400">
+            <p class="text-xs text-purple-300">أدخل الرقم السري الإداري</p>
+            <input type="password" id="admin-passcode-input" autocomplete="new-password" placeholder="••••••••" class="w-full bg-slate-900 border border-purple-500/40 p-3 rounded-2xl text-center text-base font-mono text-white tracking-wider focus:outline-none focus:border-purple-400">
             <div class="flex gap-2">
                 <button onclick="closeAdminModal()" class="w-1/2 bg-slate-800 text-slate-300 py-2.5 rounded-xl text-xs font-bold">إلغاء</button>
-                <button onclick="verifyAdminLogin()" class="w-1/2 bg-amber-600 hover:bg-amber-500 text-white py-2.5 rounded-xl text-xs font-bold">دخول</button>
+                <button onclick="verifyAdminLogin()" class="w-1/2 bg-purple-600 hover:bg-purple-500 text-white py-2.5 rounded-xl text-xs font-bold">دخول</button>
             </div>
         </div>
     </div>
 
     <!-- SCRIPT ENGINE -->
     <script>
+        // رابط الشيت الخاص بالصف الثالث الإعدادي
         const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxW6F6eFsOo9w62J0DbxEkSns-HOLn1gbE1QwAFOzdCuSUHT2EiikPGTf4qG72i7msoQQ/exec";
         const NEW_BANNER_URL = "https://i.postimg.cc/Y2FdWsdv/ghlaf.jpg";
 
@@ -641,7 +638,7 @@
         }
 
         const DEFAULT_CONFIG = {
-            testId: 'exam_soc_prep3',
+            testId: 'exam_soc_prep3_v40_final',
             title: 'اختبار الصف الثالث الإعدادي في الدراسات الاجتماعية',
             grade: 'الصف الثالث الإعدادي',
             subject: 'الدراسات الاجتماعية',
@@ -655,48 +652,55 @@
         };
 
         const DEFAULT_STUDENTS = [
-            { id: 'std_p301', name: 'كريم ممدوح', passcode: '1122', isBanned: false, banReason: '', banTime: '' },
-            { id: 'std_p302', name: 'ندى مجدي', passcode: '3344', isBanned: false, banReason: '', banTime: '' },
-            { id: 'std_p303', name: 'حازم رأفت', passcode: '5566', isBanned: false, banReason: '', banTime: '' }
+            { id: 'std_prep301', name: 'محمود أحمد', passcode: '1122', isBanned: false, banReason: '', banTime: '' },
+            { id: 'std_prep302', name: 'رنا علي', passcode: '3344', isBanned: false, banReason: '', banTime: '' }
         ];
 
+        // --- الـ 40 سؤالاً الخاصة بالصف الثالث الإعدادي (20 صح وخطأ + 20 اختيار من متعدد مدمجة دفعة واحدة) ---
         const DEFAULT_QUESTIONS = [
-            {
-                id: 'q_p301',
-                type: 'mcq',
-                text: 'أكبر قارات العالم سكاناً هي قارة...',
-                options: ['آسيا', 'أفريقيا', 'أوروبا', 'أستراليا'],
-                correct: 0,
-                points: 1,
-                image: ''
-            },
-            {
-                id: 'q_p302',
-                type: 'true_false',
-                text: 'تتركز قارة أستراليا في النصف الجنوبي من الكرة الأرضية.',
-                options: ['عبارة صحيحة', 'عبارة خاطئة'],
-                correct: 0,
-                points: 1,
-                image: ''
-            },
-            {
-                id: 'q_p303',
-                type: 'complete',
-                text: 'يقع بحر قزوين داخل قارة...',
-                options: ['آسيا', 'أفريقيا', 'أوروبا', 'أمريكا الشمالية'],
-                correct: 0,
-                points: 2,
-                image: ''
-            },
-            {
-                id: 'q_p304',
-                type: 'error_correction',
-                text: 'صوب الخطأ: تفصل جبال الأورال بين قارتي آسيا وأفريقيا. التصويب هو أنها تفصل بين آسيا و...',
-                options: ['أوروبا', 'أستراليا', 'أمريكا الشمالية', 'أنتاركتيكا'],
-                correct: 0,
-                points: 2,
-                image: ''
-            }
+            // 20 سؤال صح أم خطأ
+            { id: 'q_tf_1', type: 'true_false', text: 'تُعد قارة آسيا أكبر قارات العالم مساحة وتضم تضاريس متنوعة.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_2', type: 'true_false', text: 'تطل قارة إفريقيا على البحر المتوسط من الشمال وعلى البحر الأحمر من الشرق.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_3', type: 'true_false', text: 'تقع قارة أستراليا (أوقيانوسيا) في نصف الكرة الأرضية الغربي بالكامل.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+            { id: 'q_tf_4', type: 'true_false', text: 'يفصل جبال الأورال بين قارتي آسيا وأوروبا.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_5', type: 'true_false', text: 'تحيط المياه بقارة أستراليا من جميع الجهات باعتبارها جزيرة كبيرة.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_6', type: 'true_false', text: 'تتميز سواحل قارة أوروبا بالاستقامة والاتساع وخلوها من الخليجان والجزائر.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+            { id: 'q_tf_7', type: 'true_false', text: 'تضم قارة إفريقيا أعلى القمم الجبلية في العالم مثل قمة جبل هيمالايا.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+            { id: 'q_tf_8', type: 'true_false', text: 'تصب انهار سيبريا (أوب، يانسي، لينا) في المحيط القطبي الشمالي.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_9', type: 'true_false', text: 'تقع شبه جزيرة الملايو في قارة أمريكا الشمالية.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+            { id: 'q_tf_10', type: 'true_false', text: 'تجري نهر ميسيسيبي في قارة أمريكا الشمالية ويصب في خليج المكسيك.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_11', type: 'true_false', text: 'ينتمي مناخ حوض الإقليم الاستوائي إلى درجات حرارة مرتفعة وأمطار طوال العام.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_12', type: 'true_false', text: 'يقع إقليم المناخ الموسمي في أستراليا وشرق آسيا ويتميز بأمطار غزيرة صيفاً.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_13', type: 'true_false', text: 'تتسم السلالة البشرية الرئيسية بانتماءاتها للون البشرة وشكل الشعر وملامح الوجه.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_14', type: 'true_false', text: 'تتركز السلالة القوقازية بشكل أساسي في قارتي آسيا وأفريقيا فقط.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+            { id: 'q_tf_15', type: 'true_false', text: 'تعتبر قارة آسيا أكبر قارات العالم سكاناً.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_16', type: 'true_false', text: 'تقل الكثافة السكانية في المناطق الصحراوية والجبلية الوعرة.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_17', type: 'true_false', text: 'تعتبر دولة مصر من الدول ذات الرعاية الطبية المرتفعة.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_18', type: 'true_false', text: 'تتجاوز نسبة التعليم في بعض الدول النامية 95% مثل مصر والأرجنتين.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_19', type: 'true_false', text: 'تعتبر قارة أوروبا أقل قارات العالم في معدل الزيادة الطبيعية للسكان.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 0, points: 1, image: '' },
+            { id: 'q_tf_20', type: 'true_false', text: 'تنتشر الهجرة غير الشرعية غالباً من الدول المتقدمة إلى الدول النامية.', options: ['عبارة صحيحة', 'عبارة خاطئة'], correct: 1, points: 1, image: '' },
+
+            // 20 سؤال اختيار من متعدد
+            { id: 'q_mcq_1', type: 'mcq', text: 'أكبر قارات العالم من حيث المساحة هي قارة:', options: ['إفريقيا', 'آسيا', 'أوروبا', 'أمريكا الشمالية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_2', type: 'mcq', text: 'القارة التي تقع بالكامل في نصف الكرة الجنوبي هي قارة:', options: ['أستراليا', 'أنتاركتيكا (القطب الجنوبي)', 'إفريقيا', 'أمريكا الجنوبية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_3', type: 'mcq', text: 'المحيط الذي يحد قارات العالم من جهة الغرب هو المحيط:', options: ['الهندي', 'الهادي', 'الأطلنطي', 'القطبي الشمالي'], correct: 2, points: 1, image: '' },
+            { id: 'q_mcq_4', type: 'mcq', text: 'تفصل جبال ........ بين قارتي إفريقيا وأوروبا (بحر المتوسط يفصل بينهما).', options: ['الأورال', 'البحر المتوسط', 'الألب', 'الهيمالايا'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_5', type: 'mcq', text: 'أكبر بحر مغلق في العالم ويقع في قارة آسيا هو بحر:', options: ['القصوين', 'قزوين', 'الأسود', 'الميت'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_6', type: 'mcq', text: 'تنتمي مجموعة الأقزام والسود البشرة إلى السلالة:', options: ['القوقازية', 'الزنجية', 'المغولية', 'الأسترالية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_7', type: 'mcq', text: 'تتركز السلالة المغولية بشكل أساسي في قارة:', options: ['إفريقيا', 'أوروبا', 'آسيا', 'أستراليا'], correct: 2, points: 1, image: '' },
+            { id: 'q_mcq_8', type: 'mcq', text: 'الدولة التي تضم أكبر تجمع سكاني في العالم هي:', options: ['الهند', 'الصين', 'الولايات المتحدة', 'روسيا'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_9', type: 'mcq', text: 'يؤدي نقص الغذاء وقلة الخدمات إلى ظهور مشكلة:', options: ['الزيادة السكانية الهائلة', 'الوفيات المرتفعة', 'الهجرة غير الشرعية', 'الشيخوخة السكانية'], correct: 2, points: 1, image: '' },
+            { id: 'q_mcq_10', type: 'mcq', text: 'معدل المواليد مرتفع بشكل ملحوظ في قارة:', options: ['أوروبا', 'إفريقيا', 'أمريكا الشمالية', 'أستراليا'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_11', type: 'mcq', text: 'أي من الأقاليم المناخية التالية يتسم بسقوط الأمطار طوال العام؟', options: ['الصحراوي الحار', 'الاستوائي وشبه الاستوائي', 'الموسمي', 'الموسمى المعتدل'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_12', type: 'mcq', text: 'تتميز سهول إقليم التندرا القطبي بأنها:', options: ['تنمو بها الغابات المزهرة', 'تتغطى بالجليد وتنمو طحالب قصيرة صيفاً', 'غنية بالأراضي الزراعية الخصبة', 'جافة وخالية من النباتات'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_13', type: 'mcq', text: 'السهول الفيضية الأكبر مساحة في العالم توجد في شمال:', options: ['إفريقيا', 'آسيا (سهول سيبريا)', 'أوروبا', 'أمريكا الجنوبية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_14', type: 'mcq', text: 'نهر أورانج يصب في المحيط:', options: ['الهندي', 'الأطلنطي', 'الهادي', 'القطبي الجنوبي'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_15', type: 'mcq', text: 'تعتبر مصر من الدول ذات الدخل الاقتصادى:', options: ['المنخفض', 'فوق المتوسط', 'المرتفع', 'المعدوم'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_16', type: 'mcq', text: 'تعتمد دولة الخليج العربي في اقتصادها بشكل أساسي على:', options: ['الزراعة الكثيفة', 'استخراج البترول وتصديره', 'الصناعات الثقيلة المتقدمة', 'التجارة الإلكترونية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_17', type: 'mcq', text: 'يعرف متوسط نصيب الفرد من الدخل القومي بأنه المؤشر الرئيسي لـ:', options: ['الرعاية الصحية', 'مستوى الاقتصاد والرفاهية', 'مستوى التعليم والمدارس', 'الكثافة السكانية'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_18', type: 'mcq', text: 'تشهد قارة أوروبا انخفاضاً واضحاً في معدل المواليد وزيادة في نسبة:', options: ['الأطفال الرضع', 'الشباب العاملين', 'كبار السن (الشيخوخة)', 'الذكور'], correct: 2, points: 1, image: '' },
+            { id: 'q_mcq_19', type: 'mcq', text: 'تعتبر شبه جزيرة الاناضول جزءاً رئيسياً من قارة:', options: ['إفريقيا', 'آسيا', 'أوروبا', 'أستراليا'], correct: 1, points: 1, image: '' },
+            { id: 'q_mcq_20', type: 'mcq', text: 'يتركز السكان في قارة أوروبا بشكل رئيسي في المدن الكبرى و:', options: ['المناطق الجبلية', 'المناطق الصناعية والسهول الزراعية', 'الصحاري الجافة', 'الغابات الاستوائية'], correct: 1, points: 1, image: '' }
         ];
 
         let DB = {
@@ -712,43 +716,31 @@
         let isPreviewMode = false;
 
         async function fetchCloudData() {
+            DB.questions = DEFAULT_QUESTIONS;
             try {
                 const response = await fetch(`${GOOGLE_SCRIPT_URL}?testId=${DEFAULT_CONFIG.testId}`);
                 if (response.ok) {
                     const text = await response.text();
                     if (text && text.trim().length > 10) {
                         const data = JSON.parse(text);
-                        if (data && data.questions && data.questions.length > 0) {
+                        if (data && data.config) {
                             DB.config = { ...DEFAULT_CONFIG, ...data.config };
                             DB.config.bannerUrl = NEW_BANNER_URL;
                             DB.students = data.students || DEFAULT_STUDENTS;
-                            DB.questions = data.questions;
                             DB.results = data.results || [];
-                            initApp();
-                            checkActiveResumeSession();
-                            return;
                         }
                     }
                 }
             } catch(e) {}
-
-            const saved = localStorage.getItem('prep3_full_master_db');
-            if (saved) {
-                try { 
-                    const parsed = JSON.parse(saved);
-                    if (parsed && parsed.questions && parsed.questions.length > 0) {
-                        DB = parsed;
-                        DB.config.bannerUrl = NEW_BANNER_URL;
-                    }
-                } catch(err) {}
-            }
+            DB.questions = DEFAULT_QUESTIONS;
             initApp();
             checkActiveResumeSession();
         }
 
         async function saveDatabase() {
             DB.config.bannerUrl = NEW_BANNER_URL;
-            localStorage.setItem('prep3_full_master_db', JSON.stringify(DB));
+            DB.questions = DEFAULT_QUESTIONS;
+            localStorage.setItem('grade_prep3_full_master_db', JSON.stringify(DB));
             try {
                 let payload = { ...DB, testId: DEFAULT_CONFIG.testId };
                 await fetch(GOOGLE_SCRIPT_URL, {
@@ -766,7 +758,7 @@
             const toastIcon = document.getElementById('toast-icon');
 
             toastMsg.innerText = msg;
-            toastIcon.className = `fa-solid ${icon} ${isError ? 'text-red-400' : 'text-amber-400'}`;
+            toastIcon.className = `fa-solid ${icon} ${isError ? 'text-red-400' : 'text-purple-400'}`;
             toast.classList.remove('opacity-0', '-translate-y-20', 'pointer-events-none');
 
             setTimeout(() => {
@@ -792,7 +784,7 @@
 
             const badge = document.getElementById('display-badge-status');
             if (DB.config.status === 'published') {
-                badge.className = 'px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30';
+                badge.className = 'px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
                 badge.innerHTML = '<i class="fa-solid fa-circle text-[8px] mr-1 animate-pulse"></i> متاح للطلاب';
             } else if (DB.config.status === 'draft') {
                 badge.className = 'px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30';
@@ -813,7 +805,7 @@
         }
 
         function checkActiveResumeSession() {
-            const savedAttempt = localStorage.getItem('prep3_active_attempt');
+            const savedAttempt = localStorage.getItem('grade_prep3_active_attempt');
             if (savedAttempt) {
                 try {
                     const parsed = JSON.parse(savedAttempt);
@@ -842,12 +834,12 @@
 
         function saveActiveAttemptState() {
             if (!isPreviewMode && activeAttempt && !activeAttempt.isCompleted) {
-                localStorage.setItem('prep3_active_attempt', JSON.stringify(activeAttempt));
+                localStorage.setItem('grade_prep3_active_attempt', JSON.stringify(activeAttempt));
             }
         }
 
         function clearActiveAttemptState() {
-            localStorage.removeItem('prep3_active_attempt');
+            localStorage.removeItem('grade_prep3_active_attempt');
         }
 
         function handleStartClick() {
@@ -907,7 +899,7 @@
             const entered = document.getElementById('student-passcode-input').value.trim();
             if (entered === currentStudent.passcode) {
                 closePasscodeModal();
-                document.getElementById('ready-q-count').innerText = `${DB.questions.length} أسئلة`;
+                document.getElementById('ready-q-count').innerText = `${DB.questions.length} سؤالاً`;
                 document.getElementById('ready-duration').innerText = `${DB.config.durationMinutes} دقيقة`;
                 document.getElementById('modal-ready').classList.remove('hidden');
             } else {
@@ -925,6 +917,7 @@
             isPreviewMode = false;
 
             const isRandom = DB.config.isRandomOrder !== false;
+            DB.questions = DEFAULT_QUESTIONS;
 
             let preparedQuestions = DB.questions.map(q => {
                 const correctText = q.options[q.correct];
@@ -974,6 +967,7 @@
         function previewQuiz() {
             isPreviewMode = true;
             currentStudent = { id: 'preview_id', name: 'معاينة تجريبية (المدير)' };
+            DB.questions = DEFAULT_QUESTIONS;
             
             const previewQuestions = DB.questions.map(q => ({
                 questionId: q.id,
@@ -1017,11 +1011,7 @@
 
             const typeLabels = {
                 mcq: 'اختيار من متعدد',
-                true_false: 'صح أو خطأ',
-                complete: 'أكمل العبارة',
-                error_correction: 'تصويب الخطأ',
-                what_results: 'ما النتائج المترتبة على',
-                why_explain: 'بما تفسر'
+                true_false: 'صح أو خطأ'
             };
             document.getElementById('quiz-q-type').innerText = typeLabels[q.type] || 'سؤال';
 
@@ -1040,7 +1030,7 @@
             q.shuffledOptions.forEach(optText => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
-                btn.className = 'glass-card hover:bg-amber-600/30 border border-yellow-500/40 hover:border-yellow-300 p-4 rounded-2xl text-white font-bold text-sm sm:text-base transition text-center btn-3d flex items-center justify-center min-h-[55px] wrap-safe leading-relaxed cursor-pointer';
+                btn.className = 'glass-card hover:bg-purple-600/30 border border-purple-500/40 hover:border-purple-300 p-4 rounded-2xl text-white font-bold text-sm sm:text-base transition text-center btn-3d flex items-center justify-center min-h-[55px] wrap-safe leading-relaxed cursor-pointer';
                 btn.innerText = optText;
                 
                 btn.onclick = (e) => {
@@ -1192,7 +1182,7 @@
             } else if (result.percent >= 65) {
                 headline.innerText = 'نتيجة جيدة جداً، واصل التقدم! 👏';
                 msg.innerText = 'مستوى طيب ومجهود تشكر عليه، بقليل من المراجعة ستصل للدرجة النهائية.';
-                iconWrap.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-3xl shadow-xl bg-amber-500/20 text-amber-300 border border-amber-500/40';
+                iconWrap.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-3xl shadow-xl bg-purple-500/20 text-purple-300 border border-purple-500/40';
             } else {
                 headline.innerText = 'محاولة طيبة، راجع دروسك وستتفوق! 💪';
                 msg.innerText = 'لا بأس، كل تجربة تعلمنا الكثير. راجع النقاط الخاطئة واستعد للاختبار القادم.';
@@ -1216,7 +1206,7 @@
                         <span class="text-white">س${idx + 1}: ${item.questionText}</span>
                         <span class="${isCorr ? 'text-emerald-400' : 'text-red-400'}">${item.pointsEarned} / ${item.pointsPossible} درجات</span>
                     </div>
-                    <div class="text-amber-200">إجابتك: <span class="font-bold ${isCorr ? 'text-emerald-300' : 'text-red-300'}">${item.studentAnsText}</span></div>
+                    <div class="text-purple-200">إجابتك: <span class="font-bold ${isCorr ? 'text-emerald-300' : 'text-red-300'}">${item.studentAnsText}</span></div>
                     ${!isCorr ? `<div class="text-emerald-400 mt-0.5 font-bold">الإجابة الصحيحة: ${item.correctAnsText}</div>` : ''}
                 `;
                 breakdown.appendChild(div);
@@ -1259,7 +1249,7 @@
                 document.getElementById(`admin-tab-btn-${t}`).className = 'admin-tab-btn px-4 py-2.5 rounded-xl bg-slate-800 text-slate-300 whitespace-nowrap';
             });
             document.getElementById(`admin-tab-${tabName}`).classList.remove('hidden');
-            document.getElementById(`admin-tab-btn-${tabName}`).className = 'admin-tab-btn px-4 py-2.5 rounded-xl bg-amber-600 text-white whitespace-nowrap';
+            document.getElementById(`admin-tab-btn-${tabName}`).className = 'admin-tab-btn px-4 py-2.5 rounded-xl bg-purple-600 text-white whitespace-nowrap';
         }
 
         function updateRandomButtonUI() {
@@ -1269,7 +1259,7 @@
             const isRandom = DB.config.isRandomOrder !== false;
 
             if (isRandom) {
-                btn.className = 'px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-yellow-600 hover:bg-yellow-500 text-white shadow-md';
+                btn.className = 'px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white shadow-md';
                 icon.className = 'fa-solid fa-check';
                 text.innerText = 'مفعل (ترتيب عشوائي للأسئلة والخيارات)';
             } else {
@@ -1363,14 +1353,14 @@
             list.innerHTML = '';
             DB.questions.forEach((q, idx) => {
                 const div = document.createElement('div');
-                div.className = 'p-3 bg-slate-800/80 rounded-xl border border-yellow-500/30 flex justify-between items-center text-xs';
+                div.className = 'p-3 bg-slate-800/80 rounded-xl border border-purple-500/30 flex justify-between items-center text-xs';
                 div.innerHTML = `
                     <div class="overflow-hidden pr-2">
                         <span class="font-bold text-white block">س${idx + 1}: ${q.text}</span>
-                        <span class="text-amber-300 font-semibold">(${q.points} درجات)</span>
+                        <span class="text-purple-300 font-semibold">(${q.points} درجات)</span>
                     </div>
                     <div class="flex gap-2 flex-shrink-0">
-                        <button onclick="editQuestion('${q.id}')" class="text-amber-300 hover:text-amber-200 p-1"><i class="fa-solid fa-pen"></i></button>
+                        <button onclick="editQuestion('${q.id}')" class="text-purple-300 hover:text-purple-200 p-1"><i class="fa-solid fa-pen"></i></button>
                         <button onclick="deleteQuestion('${q.id}')" class="text-red-400 hover:text-red-300 p-1"><i class="fa-solid fa-trash"></i></button>
                     </div>
                 `;
@@ -1473,10 +1463,10 @@
                 tr.innerHTML = `
                     <td class="p-2.5 font-mono">${s.id}</td>
                     <td class="p-2.5 font-bold text-white">${s.name}</td>
-                    <td class="p-2.5 font-mono text-amber-300">${s.passcode}</td>
+                    <td class="p-2.5 font-mono text-purple-300">${s.passcode}</td>
                     <td class="p-2.5">${s.isBanned ? '<span class="text-amber-400 font-bold">مقيد / أتم الاختبار</span>' : '<span class="text-emerald-400">متاح للاختبار</span>'}</td>
                     <td class="p-2.5 flex gap-2">
-                        <button onclick="toggleBanStudent('${s.id}')" class="text-xs ${s.isBanned ? 'text-amber-400 font-bold' : 'text-amber-400'}">${s.isBanned ? 'فك القيد' : 'حظر'}</button>
+                        <button onclick="toggleBanStudent('${s.id}')" class="text-xs ${s.isBanned ? 'text-emerald-400 font-bold' : 'text-amber-400'}">${s.isBanned ? 'فك القيد' : 'حظر'}</button>
                         <button onclick="deleteStudent('${s.id}')" class="text-xs text-red-400 hover:underline">حذف</button>
                     </td>
                 `;
@@ -1553,7 +1543,7 @@
                     <td class="p-2.5 font-bold text-white">${s.name}</td>
                     <td class="p-2.5 text-amber-300">${s.banReason || 'أتم الاختبار'}</td>
                     <td class="p-2.5 text-slate-400 font-mono text-[11px]">${s.banTime}</td>
-                    <td class="p-2.5"><button onclick="toggleBanStudent('${s.id}')" class="bg-yellow-600/30 text-yellow-300 border border-yellow-500/40 px-3 py-1 rounded-lg text-xs font-bold hover:bg-yellow-600/50">فك الحظر وإتاحة الاختبار</button></td>
+                    <td class="p-2.5"><button onclick="toggleBanStudent('${s.id}')" class="bg-emerald-600/30 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-lg text-xs font-bold hover:bg-emerald-600/50">فك الحظر وإتاحة الاختبار</button></td>
                 `;
                 tbody.appendChild(tr);
             });
@@ -1573,12 +1563,12 @@
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
                     <td class="p-2.5 font-bold text-white">${r.studentName}</td>
-                    <td class="p-2.5 font-mono text-amber-300">${r.score} / ${r.totalPoints}</td>
+                    <td class="p-2.5 font-mono text-purple-300">${r.score} / ${r.totalPoints}</td>
                     <td class="p-2.5 font-bold ${r.percent >= 50 ? 'text-emerald-400' : 'text-red-400'}">${r.percent}%</td>
                     <td class="p-2.5 text-slate-400">${r.correctCount} صح / ${r.wrongCount} خطأ</td>
                     <td class="p-2.5 text-slate-400 font-mono text-[11px]">${r.dateTime}</td>
                     <td class="p-2.5 flex items-center gap-2">
-                        <button onclick='displayResultScreen(${JSON.stringify(r)})' class="text-amber-300 hover:text-amber-200 underline text-xs">عرض الورقة</button>
+                        <button onclick='displayResultScreen(${JSON.stringify(r)})' class="text-purple-300 hover:text-purple-200 underline text-xs">عرض الورقة</button>
                         <span class="text-slate-600">|</span>
                         <button onclick="deleteSingleResult(${actualIndex})" class="text-red-400 hover:text-red-300 text-xs font-semibold px-2 py-1 rounded bg-red-500/10 border border-red-500/20 transition"><i class="fa-solid fa-trash ml-1"></i> حذف</button>
                     </td>
@@ -1619,7 +1609,7 @@
             const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = `نتائج_الثالث_الاعدادي_${Date.now()}.csv`;
+            link.download = `نتائج_الصف_الثالث_الإعدادي_${Date.now()}.csv`;
             link.click();
         }
 
